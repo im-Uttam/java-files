@@ -1,12 +1,17 @@
-public class ifelse {
-    public static void main(String[] args) {
-        int a, b;
-        a = 20;
-        b = 10;
-        if (a > b) {
-            System.out.println("a is greater than b");
+public class IfElse {
+
+    public static void compare(int x, int y) {
+        if (x > y) {
+            System.out.println("x is greater than y");
+        } else if (x == y) {
+            System.out.println("x is equal to y");
         } else {
-            System.out.println("b is greater than a");
+            System.out.println("y is greater than x");
         }
+    }
+
+    public static void main(String[] args) {
+        compare(19, 20);
+        compare(50, 10);
     }
 }
